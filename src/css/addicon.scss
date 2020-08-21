@@ -1,0 +1,13 @@
+.addicon_box  {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    .addbtn {
+        position: absolute;
+        height: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        width:85%;
+        font-size: 18px;
+    }
+}

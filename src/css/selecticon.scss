@@ -1,0 +1,51 @@
+@import './app.scss';
+.select_box {
+    width: $width;
+    height: $height;
+}
+    .tags {
+        margin-top: 10px;
+        li {
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            font-size: $font-size;
+            padding: 0 20px; 
+            transition: all .3s;
+            &:hover {
+                cursor: pointer;
+                background:rgb(229,229,229);
+                .icons-two {
+                    display: block;
+                }
+            } 
+            .icons-two {
+                position: absolute;
+                right: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                @include svg_style;   
+                display: none;    
+                transition: all .3s;  
+            }  
+            .circles {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-top: -5px;
+            } 
+            .icons-three {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .hide {
+                display: none;
+            }
+        }
+    }
+

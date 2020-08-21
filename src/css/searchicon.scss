@@ -1,0 +1,19 @@
+@import './app.scss';
+
+.icon-search {
+    width: $width;
+    height: 60px;
+    border-bottom: 1px solid rgb(229,229,229);
+    .input-control {
+        width: 330px;
+        height: $height; 
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        font-size: $font-size;
+        box-sizing: border-box;
+    }
+    .icons {
+       @include svg_style
+    }
+}

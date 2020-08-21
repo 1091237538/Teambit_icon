@@ -1,0 +1,38 @@
+.remove_box {
+    width: 100%;
+    height: 250px;
+    .remove_title {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        .remove-icons {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform:translateY(-50%);
+            cursor: pointer;
+        }
+    }
+    .ant-divider-horizontal {
+        margin: 0;
+    }
+    .tip_text {
+        width: 100%;
+        height: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .remove-btn {
+        width: 80%;
+        margin-left: 10%;
+        height: 55px;
+        margin-top: 20px;
+    }
+}
