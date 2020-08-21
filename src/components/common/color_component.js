@@ -18,7 +18,7 @@ class Colorcomponent extends React.Component {
             )
         })
         return (
-            <ul ccd lassName='color_box'>
+            <ul className='color_box'>
                 {color_lis}
             </ul>
         )

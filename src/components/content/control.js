@@ -1,14 +1,14 @@
 import React from 'react'
 import '../../css/control.scss'
 import IconBox from './iconBox'
-import { CloseCircleOutlined } from '@ant-design/icons'
+import { CloseCircleOutlined, ArrowDownOutlined } from '@ant-design/icons'
 
 class Control extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             iconBox_keys: true,
-            display: 'block',
+            display: 'none',
             tags: []
         }
     }
@@ -16,6 +16,7 @@ class Control extends React.Component {
         if (this.state.tags.length <= 0) {
             return (
                 <div className='box'>
+                    <div><ArrowDownOutlined />点击此处</div>
                     <div className='activeColor' onClick={this.openIcon} >添加标签</div>
                     <IconBox active_keys={this.state.display} getSelect={this.getSelectIcon} newTags={this.state.tags} setTagmenu={this.setTagmenu} update_tag={this.update_tag} update_removeTag={this.update_removeTag}></IconBox>
                 </div>
